@@ -26,8 +26,8 @@
 
 <body>
     <nav class="navbar navbar-expand navbar-dark sticky-top" style="height: 2.5rem;">
-        <!-- <div class="mx-auto d-none d-sm-block"> -->
-        <div class="mx-auto">
+        <div class="mx-auto d-none d-sm-block">
+        <!-- <div class="mx-auto"> -->
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">XYZ</span></a>
@@ -43,22 +43,22 @@
                 </li>
             </ul>
         </div>
-        <!-- <div class="mx-auto d-block d-sm-none">
+        <div class="mx-auto d-block d-sm-none">
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">XYZ</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#About">About</a>
+                    <a class="nav-link" href="#About2">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#R_News">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Publications">Publi...</a>
+                    <a class="nav-link" href="#Publications">Publications...</a>
                 </li>
             </ul>
-        </div> -->
+        </div>
     </nav>
 
     <!-- <div style="height: 70px;"></div> -->
@@ -67,8 +67,53 @@
             <div class="home-section-bg bg-image"
                 style="background-color:#000;background-image:url(assets/img/test-min.JPG);background-size:cover;background-position:50%;filter:brightness(.5)">
             </div>
-            <div class="container">
-                <div id="profile">
+            <div class="container-fluid">
+                <div class="d-none d-md-block d-lg-block d-xl-block" id="profile">
+                    <!-- visible geq lg -->
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="avatar-wrapper"><img class="avatar avatar-circle" src="assets/img/test-min.JPG"
+                                    alt="XYZ" width="150" height="150"></div>
+                            <div class="portrait-title">
+                                <h2>Xiangyu Zhu</h2>
+                                <h3>DACS-PCL, TEM/XRD Eng.</h3>
+                                <h3><span>Texas Instruments Inc.</span></h3>
+                                <!-- <h3><span>Ph.D., University of Texas, Dallas</span></h3> -->
+                            </div>
+                            <ul class="network-icon" aria-hidden="true">
+                                <li><a href="mailto:Xiangyu_Zhu@outlook.com" aria-label="envelope"> <i
+                                            class="fas fa-envelope big-icon"></i> </a></li>
+                                <!-- <li><a href="https://twitter.com" target="_blank" rel="noopener" aria-label="twitter"><i class="fab fa-twitter big-icon"></i></a></li> -->
+                                <li><a href="https://scholar.google.com/citations?user=AepQVwMAAAAJ&hl=en" target="_blank"
+                                        rel="noopener" aria-label="google-scholar"><i
+                                            class="ai ai-google-scholar big-icon"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/xiangyu-zhu-a08751191" target="_blank" rel="noopener"
+                                        aria-label="github"><i class="fab fa-linkedin big-icon"></i></a></li>
+                                <li><a href="assets/uploads/cv.txt" target="_blank" rel="noopener" aria-label="cv"><i
+                                            class="ai ai-cv big-icon"></i></a></li>
+                            </ul> 
+                        </div>
+                        <div class="col-9"> 
+                            <div class="px-5 pt-5" id="About">
+                                <!-- <h3>About</h3> -->
+                                <!-- <h2>Welcome</h2> -->
+                                <p class="font-weight-light">Hello world. a looong sentence to introduce yourself. blah blah
+                                    blah</p>
+                                <p class="font-weight-light">An engineer and researcher specializing in failure analysis and
+                                    materials characterization.
+                                    Having a strong background in physical metallurgy and materials science, and more than 6-year
+                                    hands-on experience in cross-platform characterization.</p>
+                                <p class="font-weight-light">something like: phd, graduated 2023, in Natural Science and Engineering
+                                    Research Laboratory, Department of Materials Science and Engineering, University of Texas at
+                                    Dallas (UTD)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block d-md-none d-lg-none d-xl-none" id="profile">
+                    <!-- visible leq md -->
+                    <!-- <h1>hello 2nd</h1> -->
                     <div class="avatar-wrapper"><img class="avatar avatar-circle" src="assets/img/test-min.JPG"
                             alt="XYZ" width="150" height="150"></div>
                     <div class="portrait-title">
@@ -94,27 +139,10 @@
         </section>
 
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center justify-content-around">
-            <div class="col-md-9 col-lg-6" id="ContentPane">
-                <div class="pt-5" id="Notes">
-                    <h3>developer's notes</h3>
-                    <div class="alert alert-primary mt-3" role="alert">
-                        💭 Select a cover picture... pending
-                    </div>
-                    <div class="alert alert-warning mt-3" role="alert">
-                        Also, an avatar photo would be appreciated :)
-                    </div>
-                    <div class="alert alert-info mt-3" role="alert">
-                        anything else you may want to have in this page? send an email <a href="urnotmiaomiao@gmail.com"
-                            aria-label="envelope"> <i class="fas fa-envelope"></i></a>
-                        (or just let me know, it's 2:17am now, my brain is not working properly)
-                    </div>
-                    <div class="alert alert-danger mt-3" role="alert">
-                        FYI, this is a Valentine's Day gift 🌹
-                    </div>
-                </div>
-                <div class="pt-5 " id="About">
+            <div class="mx-lg-5 mx-1" id="ContentPane">
+                <div class="pt-5 d-md-none d-lg-none d-xl-none" id="About2">
                     <h3>About</h3>
                     <!-- <h2>Welcome</h2> -->
                     <p class="font-weight-light">Hello world. a looong sentence to introduce yourself. blah blah
@@ -229,6 +257,24 @@
                     <p>for example, IDK...</p>
                     <div class="alert alert-secondary mt-3" role="alert">
                         Any idea what to put here? Or we could delete this section at least
+                    </div>
+                </div>
+
+                <div class="pb-5" id="Notes">
+                    <h3>developer's notes</h3>
+                    <div class="alert alert-primary mt-3" role="alert">
+                        💭 Select a cover picture... pending
+                    </div>
+                    <div class="alert alert-warning mt-3" role="alert">
+                        Also, an avatar photo would be appreciated :)
+                    </div>
+                    <div class="alert alert-info mt-3" role="alert">
+                        anything else you may want to have in this page? send an email <a href="urnotmiaomiao@gmail.com"
+                            aria-label="envelope"> <i class="fas fa-envelope"></i></a>
+                        (or just let me know, it's 2:17am now, my brain is not working properly)
+                    </div>
+                    <div class="alert alert-danger mt-3" role="alert">
+                        FYI, this is a Valentine's Day gift 🌹
                     </div>
                 </div>
             </div>
